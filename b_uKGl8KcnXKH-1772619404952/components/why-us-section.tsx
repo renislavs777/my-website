@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import { RevealSection } from "@/components/reveal-section"
 
 const features = [
@@ -50,6 +51,14 @@ export function WhyUsSection() {
                 Bez šabloniem. Bez saīsinājumiem. Katrs projekts tiek veidots no nulles,
                 lai perfekti kalpo jūsu mērķiem.
               </p>
+              <div className="mt-10 relative aspect-[4/3] overflow-hidden rounded-2xl">
+                <Image
+                  src="/images/why-us.jpg"
+                  alt="Moderna darba vieta ar dizaina rīkiem"
+                  fill
+                  className="object-cover"
+                />
+              </div>
             </RevealSection>
           </div>
 

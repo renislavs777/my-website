@@ -11,13 +11,7 @@ export function HeroSection() {
       {/* Shader gradient background */}
       <ShaderGradient />
 
-      {/* Fade overlay at bottom for smooth transition to light bg */}
-      <div
-        className="pointer-events-none absolute bottom-0 left-0 right-0 h-48 z-[1]"
-        style={{
-          background: "linear-gradient(to top, oklch(0.98 0 0), transparent)",
-        }}
-      />
+
 
       <div className="relative z-10 mx-auto w-full max-w-6xl px-8 pb-20 pt-32 lg:px-12">
         <RevealSection>
