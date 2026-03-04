@@ -52,6 +52,14 @@ const projects = [
       "Analītikas panelis ar reāllaika datu vizualizāciju un komandas sadarbības rīkiem.",
     url: "https://example.com",
   },
+  {
+    image: "/images/project-5.jpg",
+    name: "DataFlow",
+    category: "SaaS",
+    description:
+      "Analītikas panelis ar reāllaika datu vizualizāciju un komandas sadarbības rīkiem.",
+    url: "https://example.com",
+  },
 ]
 
 export function ProjectsSection() {
@@ -62,7 +70,7 @@ export function ProjectsSection() {
           <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-20">
             <div>
               <p className="text-[13px] font-medium uppercase tracking-[0.2em] text-muted-foreground mb-4">
-                Izvēlēti darbi
+                Mūsu paveiktie darbi
               </p>
               <h2 className="font-[family-name:var(--font-heading)] text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl uppercase">
                 Projekti
