@@ -7,19 +7,19 @@ const services = [
     num: "01",
     title: "Mājaslapas",
     description:
-      "Individuāli veidotas mājaslapas, kas ielādējas zibenīgi un ierindojas augstāk meklētājos. No korporatīvām līdz portfolio — katrs pikselis ir pārdomāts.",
+      "Mēs veidojam modernas un ātras mājaslapas, izmantojot pasaulē populārāko un uzticamāko satura vadības sistēmu – WordPress. Mūsu mērķis ir radīt lapas, kas ir viegli lietojamas, drošas un pielāgotas katra klienta vajadzībām. Strādājam tā, lai mūsu klientiem nākotnē būtu pēc iespējas mazāk papildu izmaksu un lai mājaslapu būtu viegli uzturēt.",
   },
   {
     num: "02",
     title: "Interneta veikali",
     description:
-      "E-komercija, kas konvertē. Nevainojami pirkuma procesi, inventāra sistēmas un maksājumu integrācijas, kas vienkārši strādā.",
+      "Mēs izstrādājam ērtus, ātrus un drošus interneta veikalus, izmantojot pasaulē populārāko platformu – WordPress ar WooCommerce. Veikalus veidojam tā, lai tos būtu viegli pārvaldīt un attīstīt arī nākotnē. Mūsu mērķis ir radīt risinājumu, kas palīdz pārdot vairāk un vienlaikus samazina klientiem nevajadzīgas papildu izmaksas.",
   },
   {
     num: "03",
     title: "Dizains",
     description:
-      "Uz lietotāju orientēts dizains, kas izskatās lieliski un konvertē. Uz izpēti balstītas saskarnes, kas priecē jūsu klientus.",
+      "Mēs neveidojam mājaslapas no gataviem šabloniem. Katras lapas dizainu izstrādājam individuāli, balstoties uz klienta vēlmēm un zīmola identitāti. Mūsu mērķis ir radīt modernu, pārskatāmu un profesionālu dizainu, kas izceļ uzņēmumu un palīdz tam izskatīties uzticamam internetā.",
   },
 ]
 
@@ -33,7 +33,7 @@ export function ServicesSection() {
               Pakalpojumi
             </p>
             <h2 className="font-[family-name:var(--font-heading)] text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl uppercase">
-              Ko mēs darām
+              Ko mēs jums piedāvājam?
             </h2>
           </div>
         </RevealSection>
