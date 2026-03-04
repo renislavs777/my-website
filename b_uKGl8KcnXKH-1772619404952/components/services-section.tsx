@@ -7,13 +7,13 @@ const services = [
     num: "01",
     title: "Mājaslapas",
     description:
-      "Mēs veidojam modernas un ātras mājaslapas, izmantojot pasaulē populārāko un uzticamāko satura vadības sistēmu – WordPress. Mūsu mērķis ir radīt lapas, kas ir viegli lietojamas, drošas un pielāgotas katra klienta vajadzībām. Strādājam tā, lai mūsu klientiem nākotnē būtu pēc iespējas mazāk papildu izmaksu un lai mājaslapu būtu viegli uzturēt.",
+      "Veidojam modernas un ātras mājaslapas, izmantojot pasaulē populārāko un uzticamāko satura vadības sistēmu – WordPress. Mūsu mērķis ir radīt lapas, kas ir viegli lietojamas, drošas un pielāgotas katra klienta vajadzībām. Strādājam tā, lai mūsu klientiem nākotnē būtu pēc iespējas mazāk papildu izmaksu un lai mājaslapu būtu viegli uzturēt.",
   },
   {
     num: "02",
     title: "Interneta veikali",
     description:
-      "Mēs izstrādājam ērtus, ātrus un drošus interneta veikalus, izmantojot pasaulē populārāko platformu – WordPress ar WooCommerce. Veikalus veidojam tā, lai tos būtu viegli pārvaldīt un attīstīt arī nākotnē. Mūsu mērķis ir radīt risinājumu, kas palīdz pārdot vairāk un vienlaikus samazina klientiem nevajadzīgas papildu izmaksas.",
+      "Izstrādājam ērtus, ātrus un drošus interneta veikalus, izmantojot pasaulē populārāko platformu – WordPress ar WooCommerce. Veikalus veidojam tā, lai tos būtu viegli pārvaldīt un attīstīt arī nākotnē. Mūsu mērķis ir radīt risinājumu, kas palīdz pārdot vairāk un vienlaikus samazina klientiem nevajadzīgas papildu izmaksas.",
   },
   {
     num: "03",
