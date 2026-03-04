@@ -33,9 +33,7 @@ export function HeroSection() {
         <RevealSection delay={250}>
           <div className="mt-14 flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
             <p className="max-w-md text-base leading-relaxed text-white/50">
-              Mājaslapas un interneta veikali ambicioziem zīmoliem.
-              Veidoti ar precizitāti, dizainēti konversijai,
-              optimizēti veiktspējai.
+              Veidojam modernas mājaslapas un interneta veikalus, kas palīdz piesaistīt klientus, stiprināt zīmolu un attīstīt jūsu biznesu digitālajā vidē.
             </p>
 
             <div className="flex items-center gap-6">
