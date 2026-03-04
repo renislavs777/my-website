@@ -25,7 +25,7 @@ const services = [
 
 export function ServicesSection() {
   return (
-    <section id="pakalpojumi" className="relative z-10 py-28 lg:py-36">
+    <section id="pakalpojumi" className="relative z-10 pt-12 lg:pt-16 pb-28 lg:pb-36">
       <div className="mx-auto max-w-6xl px-8 lg:px-12">
         <RevealSection>
           <div className="mb-20">
@@ -42,7 +42,7 @@ export function ServicesSection() {
           {services.map((service, i) => (
             <RevealSection key={service.num} delay={i * 80}>
               <div className="group flex flex-col md:flex-row md:items-center gap-6 md:gap-12 py-10 border-t border-border -mx-8 px-8 lg:-mx-12 lg:px-12 rounded-2xl transition-colors duration-300 hover:bg-secondary/50">
-                <span className="text-xs font-medium tracking-wider text-accent font-[family-name:var(--font-heading)] w-10 shrink-0">
+                <span className="text-5xl md:text-7xl font-bold tracking-tight text-accent/15 font-[family-name:var(--font-heading)] w-20 md:w-28 shrink-0 leading-none">
                   {service.num}
                 </span>
                 <h3 className="font-[family-name:var(--font-heading)] text-2xl md:text-4xl font-bold text-foreground uppercase tracking-tight w-full md:w-72 shrink-0 transition-colors duration-300 group-hover:text-accent">
