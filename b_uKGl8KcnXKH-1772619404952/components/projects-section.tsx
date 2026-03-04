@@ -21,7 +21,7 @@ const projects = [
     url: "https://autoleth.dk",
   },
   {
-    image: "http://test.nordfest.dk/wp-content/uploads/2026/03/Rolls-2048x2048-1.jpg",
+    image: "http://test.nordfest.dk/wp-content/uploads/2026/03/sell-1920x760-1.jpg",
     name: "Emildasventures",
     category: "Auto noma",
     description:
@@ -29,7 +29,7 @@ const projects = [
     url: "https://emildasventures.com/",
   },
   {
-    image: "http://test.nordfest.dk/wp-content/uploads/2026/03/production.jpg",
+    image: "http://test.nordfest.dk/wp-content/uploads/2026/03/VisyTech_Dobot_CoPal-scaled-1.jpg",
     name: "Danatecrobots",
     category: "Interneta veikals",
     description:
@@ -37,12 +37,12 @@ const projects = [
     url: "https://danatecrobots.com/",
   },
   {
-    image: "/images/project-4.jpg",
-    name: "Atelier Skin",
-    category: "E-veikals",
+    image: "http://test.nordfest.dk/wp-content/uploads/2026/03/2Tails-180-2-fotoMadaraGritane.jpg",
+    name: "Infinitygulve",
+    category: "Mājas lapa",
     description:
-      "Premium ādas kopšanas zīmols ar lookbook integrāciju, abonementu modeli un globāliem sūtījumiem.",
-    url: "https://example.com",
+      "Unikālu formu un dabiska skaistuma parkets, skandināviska vienkāršība un neatkārtojamība.",
+    url: "https://infinitygulve.dk/",
   },
   {
     image: "http://test.nordfest.dk/wp-content/uploads/2026/03/pexels-rodnae-productions-8612041.jpg",
@@ -54,7 +54,7 @@ const projects = [
   },
   {
     image: "http://test.nordfest.dk/wp-content/uploads/2026/03/Biezak-uzdotie-jautaumi.png",
-    name: "Kronīšu kokapstrāde",
+    name: "Kronīši",
     category: "Mājas lapa",
     description:
       "Mājas lapa priekš koka karkasa siltumnīcām un angāriem. Izveidots unikāls kalkulators.",
