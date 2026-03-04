@@ -22,11 +22,11 @@ export function HeroSection() {
 
         <RevealSection delay={100}>
           <h1 className="font-[family-name:var(--font-heading)] text-[clamp(2.5rem,7.5vw,7rem)] font-extrabold leading-[0.9] tracking-tight text-white uppercase">
-            {"Veidojam"}
+            {"Jūsu"}
             <br />
-            <span className="text-accent">digitālās</span>
+            <span className="text-accent">biznesa</span>
             <br />
-            pieredzes
+            izaugsmei
           </h1>
         </RevealSection>
 
