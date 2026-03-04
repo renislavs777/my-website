@@ -1,0 +1,138 @@
+"use client"
+
+import Image from "next/image"
+import { ExternalLink } from "lucide-react"
+import { RevealSection } from "@/components/reveal-section"
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselPrevious,
+  CarouselNext,
+} from "@/components/ui/carousel"
+
+const projects = [
+  {
+    image: "/images/project-1.jpg",
+    name: "StyleVault",
+    category: "E-veikals",
+    description:
+      "Luksa modes interneta veikals ar paplašinātu filtrēšanu un nevainojamu norēķināšanos. 40% konversijas pieaugums.",
+    url: "https://example.com",
+  },
+  {
+    image: "/images/project-2.jpg",
+    name: "Bistro Nouveau",
+    category: "Restorāns",
+    description:
+      "Restorāna mājaslapa ar tiešsaistes rezervācijām, dinamisku ēdienkarti un editoriālu foto.",
+    url: "https://example.com",
+  },
+  {
+    image: "/images/project-3.jpg",
+    name: "Urban Properties",
+    category: "Nekustamie īpašumi",
+    description:
+      "Īpašumu platforma ar interaktīviem sludinājumiem, virtuālām tūrēm un hipotēkas rīkiem.",
+    url: "https://example.com",
+  },
+  {
+    image: "/images/project-4.jpg",
+    name: "Atelier Skin",
+    category: "E-veikals",
+    description:
+      "Premium ādas kopšanas zīmols ar lookbook integrāciju, abonementu modeli un globāliem sūtījumiem.",
+    url: "https://example.com",
+  },
+  {
+    image: "/images/project-5.jpg",
+    name: "DataFlow",
+    category: "SaaS",
+    description:
+      "Analītikas panelis ar reāllaika datu vizualizāciju un komandas sadarbības rīkiem.",
+    url: "https://example.com",
+  },
+]
+
+export function ProjectsSection() {
+  return (
+    <section id="projekti" className="relative z-10 py-28 lg:py-36">
+      <div className="mx-auto max-w-6xl px-8 lg:px-12">
+        <RevealSection>
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-20">
+            <div>
+              <p className="text-[13px] font-medium uppercase tracking-[0.2em] text-muted-foreground mb-4">
+                Izvēlēti darbi
+              </p>
+              <h2 className="font-[family-name:var(--font-heading)] text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl uppercase">
+                Projekti
+              </h2>
+            </div>
+            <p className="mt-4 md:mt-0 max-w-sm text-sm leading-relaxed text-muted-foreground md:text-right">
+              Neliela izlase no pēdējiem darbiem. Katrs projekts veidots ar precizitāti un mērķtiecību.
+            </p>
+          </div>
+        </RevealSection>
+
+        <RevealSection delay={150}>
+          <Carousel
+            opts={{
+              align: "start",
+              slidesToScroll: 1,
+              loop: true,
+            }}
+            className="w-full"
+          >
+            <CarouselContent className="-ml-5 lg:-ml-6">
+              {projects.map((project) => (
+                <CarouselItem
+                  key={project.name}
+                  className="pl-5 lg:pl-6 md:basis-1/2 lg:basis-1/3"
+                >
+                  <div className="group block">
+                    <div className="relative aspect-[3/4] overflow-hidden rounded-2xl bg-secondary">
+                      <Image
+                        src={project.image}
+                        alt={project.name}
+                        fill
+                        className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                      />
+                      {/* Overlay on hover */}
+                      <div className="absolute inset-0 bg-foreground/0 transition-colors duration-500 group-hover:bg-foreground/10 rounded-2xl" />
+                    </div>
+                    <div className="mt-5">
+                      <div className="flex items-center justify-between gap-3">
+                        <h3 className="font-[family-name:var(--font-heading)] text-lg font-bold text-foreground uppercase tracking-tight">
+                          {project.name}
+                        </h3>
+                        <span className="text-[11px] font-medium uppercase tracking-wider text-muted-foreground border border-border px-3 py-1 rounded-full shrink-0">
+                          {project.category}
+                        </span>
+                      </div>
+                      <p className="mt-2 text-[13px] text-muted-foreground leading-relaxed">
+                        {project.description}
+                      </p>
+                      <a
+                        href={project.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="mt-4 inline-flex items-center gap-2 text-[13px] font-medium uppercase tracking-[0.1em] text-accent border border-accent/30 px-5 py-2 rounded-full transition-all duration-300 hover:bg-accent hover:text-accent-foreground"
+                      >
+                        <ExternalLink className="size-3.5" />
+                        Skatīt mājaslapu
+                      </a>
+                    </div>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <div className="mt-12 flex items-center gap-3">
+              <CarouselPrevious className="static translate-y-0 size-10 border-border bg-transparent text-foreground hover:bg-secondary hover:text-foreground rounded-full" />
+              <CarouselNext className="static translate-y-0 size-10 border-border bg-transparent text-foreground hover:bg-secondary hover:text-foreground rounded-full" />
+            </div>
+          </Carousel>
+        </RevealSection>
+      </div>
+    </section>
+  )
+}
