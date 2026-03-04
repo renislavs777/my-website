@@ -13,12 +13,12 @@ import {
 
 const projects = [
   {
-    image: "/images/project-1.jpg",
-    name: "StyleVault",
-    category: "E-veikals",
+    image: "http://test.nordfest.dk/wp-content/uploads/2026/03/614341508_1295759592591968_3081897077020491075_n.jpg",
+    name: "Autoleth",
+    category: "Auto platforma",
     description:
-      "Luksa modes interneta veikals ar paplašinātu filtrēšanu un nevainojamu norēķināšanos. 40% konversijas pieaugums.",
-    url: "https://example.com",
+      "BMW un MINI sertificēts dīleris un servisa centrs, kas nodrošina klientus ar jauniem un mazlietotiem auto.",
+    url: "https://autoleth.dk",
   },
   {
     image: "/images/project-2.jpg",
