@@ -21,20 +21,20 @@ const projects = [
     url: "https://autoleth.dk",
   },
   {
-    image: "/images/project-2.jpg",
-    name: "Bistro Nouveau",
-    category: "Restorāns",
+    image: "http://test.nordfest.dk/wp-content/uploads/2026/03/Rolls-2048x2048-1.jpg",
+    name: "Emildasventures",
+    category: "Auto noma",
     description:
-      "Restorāna mājaslapa ar tiešsaistes rezervācijām, dinamisku ēdienkarti un editoriālu foto.",
-    url: "https://example.com",
+      "Ekskluzīvu auto noma Kiprā. Speciāli taisīta booking sistēma, auto pārdošanas sistēma, kā arī kalendārs.",
+    url: "https://emildasventures.com/",
   },
   {
-    image: "/images/project-3.jpg",
-    name: "Urban Properties",
-    category: "Nekustamie īpašumi",
+    image: "http://test.nordfest.dk/wp-content/uploads/2026/03/production.jpg",
+    name: "Danatecrobots",
+    category: "Interneta veikals",
     description:
-      "Īpašumu platforma ar interaktīviem sludinājumiem, virtuālām tūrēm un hipotēkas rīkiem.",
-    url: "https://example.com",
+      "Danatec ir oficiālais Dobot robotikas risinājumu izplatītājs Latvijā, Lietuvā un Igaunijā.",
+    url: "https://danatecrobots.com/",
   },
   {
     image: "/images/project-4.jpg",
@@ -45,20 +45,20 @@ const projects = [
     url: "https://example.com",
   },
   {
-    image: "/images/project-5.jpg",
-    name: "DataFlow",
-    category: "SaaS",
+    image: "http://test.nordfest.dk/wp-content/uploads/2026/03/pexels-rodnae-productions-8612041.jpg",
+    name: "Tomoe",
+    category: "Mājas lapa",
     description:
-      "Analītikas panelis ar reāllaika datu vizualizāciju un komandas sadarbības rīkiem.",
-    url: "https://example.com",
+      "Džudo kluba mājas lapa, kas atrodās Dānijā. Lapā iespējams redzēt info un kalendāru par nodarbībām.",
+    url: "https://tomoe.dk/",
   },
   {
-    image: "/images/project-5.jpg",
-    name: "DataFlow",
-    category: "SaaS",
+    image: "http://test.nordfest.dk/wp-content/uploads/2026/03/Biezak-uzdotie-jautaumi.png",
+    name: "Kronīšu kokapstrāde",
+    category: "Mājas lapa",
     description:
-      "Analītikas panelis ar reāllaika datu vizualizāciju un komandas sadarbības rīkiem.",
-    url: "https://example.com",
+      "Mājas lapa priekš koka karkasa siltumnīcām un angāriem. Izveidots unikāls kalkulators.",
+    url: "https://kronisukokapstrade.lv/",
   },
 ]
 
