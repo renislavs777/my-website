@@ -73,26 +73,26 @@ export function ContactSection() {
                 </div>
 
                 <div className="mt-12 flex flex-col gap-6">
-                  <a href="mailto:hello@apexdigital.lv" className="group flex items-center gap-4 transition-colors duration-300">
+                  <a href="mailto:info@krastweb.com" className="group flex items-center gap-4 transition-colors duration-300">
                     <div className="flex size-10 items-center justify-center rounded-full bg-background/10">
                       <Mail className="size-4 text-background/70 transition-colors duration-300 group-hover:text-accent" />
                     </div>
                     <div>
                       <p className="text-[11px] font-medium uppercase tracking-[0.15em] text-background/40">E-pasts</p>
                       <p className="text-sm text-background/80 transition-colors duration-300 group-hover:text-background">
-                        hello@apexdigital.lv
+                        info@krastweb.com
                       </p>
                     </div>
                   </a>
 
-                  <a href="tel:+37120001234" className="group flex items-center gap-4 transition-colors duration-300">
+                  <a href="tel:+4581911508" className="group flex items-center gap-4 transition-colors duration-300">
                     <div className="flex size-10 items-center justify-center rounded-full bg-background/10">
                       <Phone className="size-4 text-background/70 transition-colors duration-300 group-hover:text-accent" />
                     </div>
                     <div>
                       <p className="text-[11px] font-medium uppercase tracking-[0.15em] text-background/40">Tālrunis</p>
                       <p className="text-sm text-background/80 transition-colors duration-300 group-hover:text-background">
-                        +371 2000 1234
+                        +45 81911508
                       </p>
                     </div>
                   </a>
@@ -103,7 +103,7 @@ export function ContactSection() {
                     </div>
                     <div>
                       <p className="text-[11px] font-medium uppercase tracking-[0.15em] text-background/40">Adrese</p>
-                      <p className="text-sm text-background/80">Brīvības iela 100, Rīga</p>
+                      <p className="text-sm text-background/80">Sirdī Latvija, bet tā Dānija</p>
                     </div>
                   </div>
                 </div>
