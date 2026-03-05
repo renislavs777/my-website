@@ -3,6 +3,7 @@
 import Image from "next/image"
 import { ExternalLink } from "lucide-react"
 import { RevealSection } from "@/components/reveal-section"
+import Autoplay from "embla-carousel-autoplay"
 import {
   Carousel,
   CarouselContent,
@@ -67,7 +68,7 @@ export function ProjectsSection() {
     <section id="projekti" className="relative z-10 py-28 lg:py-36 pb-12 lg:pb-16">
       <div className="mx-auto max-w-6xl px-8 lg:px-12">
         <RevealSection>
-          <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-20">
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-8">
             <div>
               <p className="text-[13px] font-medium uppercase tracking-[0.2em] text-muted-foreground mb-4">
                 Mūsu paveiktie darbi
@@ -91,10 +92,17 @@ export function ProjectsSection() {
               slidesToScroll: 1,
               loop: true,
             }}
+            plugins={[
+              Autoplay({
+                delay: 4000,
+                stopOnInteraction: false,
+                stopOnMouseEnter: true,
+              }),
+            ]}
             className="w-full"
           >
             {/* Arrows under the headline on the left */}
-            <div className="flex items-center justify-start gap-3 mb-8">
+            <div className="flex items-center justify-start gap-3 mb-5">
               <CarouselPrevious className="static translate-y-0 size-10 border-border bg-transparent text-foreground hover:bg-secondary hover:text-foreground rounded-full" />
               <CarouselNext className="static translate-y-0 size-10 border-border bg-transparent text-foreground hover:bg-secondary hover:text-foreground rounded-full" />
             </div>
