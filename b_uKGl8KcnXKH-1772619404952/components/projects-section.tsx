@@ -13,7 +13,7 @@ import {
 
 const projects = [
   {
-    image: "http://test.nordfest.dk/wp-content/uploads/2026/03/614341508_1295759592591968_3081897077020491075_n.jpg",
+    image: "http://test.nordfest.dk/wp-content/uploads/2026/03/Autoimage.jpg",
     name: "Autoleth",
     category: "Auto platforma",
     description:
