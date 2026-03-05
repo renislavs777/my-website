@@ -35,8 +35,10 @@ const featuresBottom = [
 
 export function WhyUsSection() {
   return (
-    <section id="par-mums" className="relative z-10 py-28 lg:py-36">
+    <section id="par-mums" className="relative z-10 pt-16 lg:pt-20 pb-28 lg:pb-36">
       <div className="mx-auto max-w-6xl px-8 lg:px-12">
+        {/* Grey divider line */}
+        <div className="border-t border-border mb-16 lg:mb-20" />
         {/* Section header */}
         <RevealSection>
           <div className="mb-20 lg:mb-28">

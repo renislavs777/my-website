@@ -1,5 +1,6 @@
 "use client"
 
+import { useRef, useEffect, useState, useCallback } from "react"
 import Image from "next/image"
 import { ExternalLink } from "lucide-react"
 import { RevealSection } from "@/components/reveal-section"
@@ -10,6 +11,7 @@ import {
   CarouselItem,
   CarouselPrevious,
   CarouselNext,
+  type CarouselApi,
 } from "@/components/ui/carousel"
 
 const projects = [
@@ -64,8 +66,45 @@ const projects = [
 ]
 
 export function ProjectsSection() {
+  const sectionRef = useRef<HTMLElement>(null)
+  const [api, setApi] = useState<CarouselApi>()
+  const autoplayRef = useRef(
+    Autoplay({
+      delay: 4000,
+      stopOnInteraction: false,
+      stopOnMouseEnter: true,
+    })
+  )
+
+  const handleIntersection = useCallback(
+    (entries: IntersectionObserverEntry[]) => {
+      const [entry] = entries
+      if (!api) return
+      if (entry.isIntersecting) {
+        autoplayRef.current.play()
+      } else {
+        autoplayRef.current.stop()
+      }
+    },
+    [api]
+  )
+
+  useEffect(() => {
+    const section = sectionRef.current
+    if (!section) return
+
+    // Stop autoplay initially until section is in view
+    autoplayRef.current.stop()
+
+    const observer = new IntersectionObserver(handleIntersection, {
+      threshold: 0.3,
+    })
+    observer.observe(section)
+    return () => observer.disconnect()
+  }, [handleIntersection])
+
   return (
-    <section id="projekti" className="relative z-10 py-28 lg:py-36 pb-12 lg:pb-16">
+    <section ref={sectionRef} id="projekti" className="relative z-10 py-28 lg:py-36 pb-12 lg:pb-16">
       <div className="mx-auto max-w-6xl px-8 lg:px-12">
         <RevealSection>
           <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-8">
@@ -87,18 +126,13 @@ export function ProjectsSection() {
 
         <RevealSection delay={150}>
           <Carousel
+            setApi={setApi}
             opts={{
               align: "start",
               slidesToScroll: 1,
               loop: true,
             }}
-            plugins={[
-              Autoplay({
-                delay: 4000,
-                stopOnInteraction: false,
-                stopOnMouseEnter: true,
-              }),
-            ]}
+            plugins={[autoplayRef.current]}
             className="w-full"
           >
             {/* Arrows under the headline on the left */}
