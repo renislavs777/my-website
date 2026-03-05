@@ -29,7 +29,7 @@ const projects = [
     url: "https://emildasventures.com/",
   },
   {
-    image: "http://test.nordfest.dk/wp-content/uploads/2026/03/Danatec.jpg",
+    image: "http://test.nordfest.dk/wp-content/uploads/2026/03/Dobot-robots.jpg",
     name: "Danatecrobots",
     category: "Interneta veikals",
     description:
