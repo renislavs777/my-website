@@ -118,7 +118,7 @@ export function WhyUsSection() {
           <RevealSection className="order-1 lg:order-2">
             <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
               <Image
-                src="/images/why-us-2.jpg"
+                src="http://test.nordfest.dk/wp-content/uploads/2026/03/398321879_830289102435057_9155434284416908712_n.webp"
                 alt="SEO un atbalsts"
                 fill
                 className="object-cover"
