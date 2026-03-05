@@ -41,7 +41,7 @@ export function ServicesSection() {
         <div className="flex flex-col">
           {services.map((service, i) => (
             <RevealSection key={service.num} delay={i * 80}>
-              <div className="group flex flex-col md:flex-row md:items-center gap-6 md:gap-12 py-10 border-t border-border -mx-8 px-8 lg:-mx-12 lg:px-12 rounded-2xl transition-colors duration-300 hover:bg-secondary/50">
+              <div className="group flex flex-col md:flex-row md:items-center gap-6 md:gap-12 py-10 border-t border-border -mx-8 pl-8 pr-4 lg:-mx-12 lg:pl-12 lg:pr-4 rounded-2xl transition-colors duration-300 hover:bg-secondary/50">
                 <span className="text-5xl md:text-7xl font-bold tracking-tight text-accent/15 font-[family-name:var(--font-heading)] w-20 md:w-28 shrink-0 leading-none">
                   {service.num}
                 </span>
