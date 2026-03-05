@@ -48,7 +48,7 @@ export function Navbar() {
             scrolled ? "text-foreground" : "text-white"
           }`}
         >
-          Apex
+          Krastweb
           <span className="text-accent">.</span>
         </Link>
 
