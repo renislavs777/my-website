@@ -16,7 +16,7 @@ export function HeroSection() {
       <div className="relative z-10 mx-auto w-full max-w-6xl px-8 pb-20 pt-32 lg:px-12">
         <RevealSection>
           <p className="mb-6 text-[13px] font-medium uppercase tracking-[0.2em] text-white/60">
-            Digitālā studija — Web & E-komercija
+            Mājas lapas un Interneta veikali
           </p>
         </RevealSection>
 
