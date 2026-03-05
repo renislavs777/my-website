@@ -35,10 +35,8 @@ const featuresBottom = [
 
 export function WhyUsSection() {
   return (
-    <section id="par-mums" className="relative z-10 pt-16 lg:pt-20 pb-28 lg:pb-36">
+    <section id="par-mums" className="relative z-10 pt-16 lg:pt-20 pb-28 lg:pb-36 border-t border-border">
       <div className="mx-auto max-w-6xl px-8 lg:px-12">
-        {/* Grey divider line */}
-        <div className="border-t border-border mb-16 lg:mb-20" />
         {/* Section header */}
         <RevealSection>
           <div className="mb-20 lg:mb-28">
@@ -75,7 +73,7 @@ export function WhyUsSection() {
               <RevealSection key={feature.num} delay={i * 120}>
                 <div className="group py-8 first:pt-0 border-b border-border last:border-b-0">
                   <div className="flex items-start gap-5">
-                    <span className="text-sm font-bold tracking-wider text-accent font-[family-name:var(--font-heading)] pt-1 shrink-0">
+                    <span className="text-2xl font-bold tracking-wider text-accent font-[family-name:var(--font-heading)] pt-1 shrink-0">
                       {feature.num}
                     </span>
                     <div>
@@ -100,7 +98,7 @@ export function WhyUsSection() {
               <RevealSection key={feature.num} delay={i * 120}>
                 <div className="group py-8 first:pt-0 border-b border-border last:border-b-0">
                   <div className="flex items-start gap-5">
-                    <span className="text-sm font-bold tracking-wider text-accent font-[family-name:var(--font-heading)] pt-1 shrink-0">
+                    <span className="text-2xl font-bold tracking-wider text-accent font-[family-name:var(--font-heading)] pt-1 shrink-0">
                       {feature.num}
                     </span>
                     <div>
