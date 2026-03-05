@@ -58,7 +58,7 @@ export function WhyUsSection() {
           <RevealSection>
             <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
               <Image
-                src="/images/why-us-1.jpg"
+                src="http://test.nordfest.dk/wp-content/uploads/2026/03/Snapinsta.app_261707367_426081789142926_2388808228243690839_n_1080.webp"
                 alt="Individuāli web risinājumi"
                 fill
                 className="object-cover"
