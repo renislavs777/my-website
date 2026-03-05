@@ -21,7 +21,7 @@ const projects = [
     url: "https://autoleth.dk",
   },
   {
-    image: "http://test.nordfest.dk/wp-content/uploads/2026/03/sell-1920x760-1.jpg",
+    image: "http://test.nordfest.dk/wp-content/uploads/2026/03/Emildas-G.jpg",
     name: "Emildasventures",
     category: "Auto noma",
     description:
@@ -29,7 +29,7 @@ const projects = [
     url: "https://emildasventures.com/",
   },
   {
-    image: "http://test.nordfest.dk/wp-content/uploads/2026/03/VisyTech_Dobot_CoPal-scaled-1.jpg",
+    image: "http://test.nordfest.dk/wp-content/uploads/2026/03/Danatec.jpg",
     name: "Danatecrobots",
     category: "Interneta veikals",
     description:
