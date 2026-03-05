@@ -21,7 +21,7 @@ export function HeroSection() {
         </RevealSection>
 
         <RevealSection delay={100}>
-          <h1 className="font-[family-name:var(--font-heading)] text-[clamp(2.5rem,7.5vw,7rem)] font-extrabold leading-[0.9] tracking-tight text-white uppercase">
+          <h1 className="font-[family-name:var(--font-heading)] text-[clamp(2rem,7vw,7rem)] font-extrabold leading-[0.9] tracking-tight text-white uppercase">
             {"Jūsu"}
             <br />
             <span className="text-accent">biznesa</span>

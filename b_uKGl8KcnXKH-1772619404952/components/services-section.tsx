@@ -25,7 +25,7 @@ const services = [
 
 export function ServicesSection() {
   return (
-    <section id="pakalpojumi" className="relative z-10 pt-12 lg:pt-16 pb-28 lg:pb-36">
+    <section id="pakalpojumi" className="relative z-10 pt-12 lg:pt-16 pb-16 lg:pb-20">
       <div className="mx-auto max-w-6xl px-8 lg:px-12">
         <RevealSection>
           <div className="mb-20">

@@ -21,15 +21,27 @@ export function Navbar() {
     return () => window.removeEventListener("scroll", onScroll)
   }, [])
 
+  // Lock body scroll when menu is open
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = "hidden"
+    } else {
+      document.body.style.overflow = ""
+    }
+    return () => {
+      document.body.style.overflow = ""
+    }
+  }, [open])
+
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-background border-b border-border/50"
+          ? "bg-background/95 backdrop-blur-md border-b border-border/50"
           : "bg-transparent"
       }`}
     >
-      <nav className="mx-auto flex max-w-6xl items-center justify-between px-8 py-5 lg:px-12">
+      <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 sm:px-8 sm:py-5 lg:px-12">
         <Link
           href="/"
           className={`font-[family-name:var(--font-heading)] text-lg font-bold tracking-tight uppercase transition-colors duration-500 ${
@@ -68,8 +80,12 @@ export function Navbar() {
 
         <button
           onClick={() => setOpen(!open)}
-          className={`md:hidden p-2 rounded-full border transition-colors duration-500 ${
-            scrolled ? "text-foreground border-border" : "text-white border-white/25"
+          className={`md:hidden relative z-50 p-2 rounded-full border transition-colors duration-500 ${
+            open
+              ? "text-foreground border-border"
+              : scrolled
+                ? "text-foreground border-border"
+                : "text-white border-white/25"
           }`}
           aria-label={open ? "Aizvērt izvēlni" : "Atvērt izvēlni"}
         >
@@ -77,15 +93,26 @@ export function Navbar() {
         </button>
       </nav>
 
-      {open && (
-        <div className="fixed inset-0 z-40 bg-background flex flex-col items-center justify-center gap-8 md:hidden">
-          <button
+      {/* Full-screen mobile menu */}
+      <div
+        className={`fixed inset-0 z-40 bg-background flex flex-col md:hidden transition-opacity duration-300 ${
+          open ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+        }`}
+      >
+        {/* Top bar with logo */}
+        <div className="flex items-center px-6 py-4 sm:px-8 sm:py-5">
+          <Link
+            href="/"
             onClick={() => setOpen(false)}
-            className="absolute top-5 right-8 text-foreground p-2 rounded-full border border-border"
-            aria-label="Aizvērt izvēlni"
+            className="font-[family-name:var(--font-heading)] text-lg font-bold tracking-tight uppercase text-foreground"
           >
-            <X className="size-5" />
-          </button>
+            Apex
+            <span className="text-accent">.</span>
+          </Link>
+        </div>
+
+        {/* Centered nav links */}
+        <div className="flex flex-1 flex-col items-center justify-center gap-8">
           {navLinks.map((link) => (
             <Link
               key={link.href}
@@ -104,7 +131,7 @@ export function Navbar() {
             Sazināties
           </Link>
         </div>
-      )}
+      </div>
     </header>
   )
 }
