@@ -22,8 +22,7 @@ const footerLinks = [
     heading: "Juridiskā info",
     links: [
       { label: "BUJ", href: "#buj" },
-      { label: "Privātuma politika", href: "#" },
-      { label: "Noteikumi", href: "#" },
+      
     ],
   },
 ]
@@ -39,7 +38,7 @@ export function Footer() {
               href="/"
               className="font-[family-name:var(--font-heading)] text-lg font-bold tracking-tight text-foreground uppercase"
             >
-              Apex
+              Krastweb
               <span className="text-accent">.</span>
             </Link>
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-muted-foreground">
@@ -76,7 +75,7 @@ export function Footer() {
             {`\u00A9 ${new Date().getFullYear()} Apex Digital. Visas tiesības aizsargātas.`}
           </p>
           <p className="text-[13px] text-muted-foreground">
-            Veidots ar rūpību un nodomu
+            Veidots no sirds un no rajona
           </p>
         </div>
       </div>
