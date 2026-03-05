@@ -8,6 +8,7 @@ import { TestimonialsSection } from "@/components/testimonials-section"
 import { FaqSection } from "@/components/faq-section"
 import { ContactSection } from "@/components/contact-section"
 import { Footer } from "@/components/footer"
+import { VisualBreak } from "@/components/visual-break"
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <div className="bg-background">
           <ProjectsSection />
           <ServicesSection />
+          <VisualBreak />
           <WhyUsSection />
           <TestimonialsSection />
           <FaqSection />
