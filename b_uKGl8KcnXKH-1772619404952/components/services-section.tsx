@@ -35,6 +35,7 @@ export function ServicesSection() {
             <h2 className="font-[family-name:var(--font-heading)] text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl uppercase">
               Ko mēs jums piedāvājam?
             </h2>
+            <div className="mt-4 w-full border-b border-accent/30" />
           </div>
         </RevealSection>
 

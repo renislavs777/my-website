@@ -76,9 +76,11 @@ export function ProjectsSection() {
                 Projekti
               </h2>
             </div>
-            <p className="mt-4 md:mt-0 max-w-sm text-sm leading-relaxed text-muted-foreground md:text-right">
-              Neliela izlase no pēdējiem darbiem. Katrs projekts veidots ar precizitāti un mērķtiecību.
-            </p>
+            <div className="flex items-center gap-6 mt-4 md:mt-0">
+              <p className="max-w-sm text-sm leading-relaxed text-muted-foreground md:text-right">
+                Neliela izlase no pēdējiem darbiem. Katrs projekts veidots ar precizitāti un mērķtiecību.
+              </p>
+            </div>
           </div>
         </RevealSection>
 
@@ -91,6 +93,11 @@ export function ProjectsSection() {
             }}
             className="w-full"
           >
+            {/* Arrows at the top right */}
+            <div className="flex items-center justify-end gap-3 mb-8">
+              <CarouselPrevious className="static translate-y-0 size-10 border-border bg-transparent text-foreground hover:bg-secondary hover:text-foreground rounded-full" />
+              <CarouselNext className="static translate-y-0 size-10 border-border bg-transparent text-foreground hover:bg-secondary hover:text-foreground rounded-full" />
+            </div>
             <CarouselContent className="-ml-5 lg:-ml-6">
               {projects.map((project) => (
                 <CarouselItem
@@ -134,10 +141,6 @@ export function ProjectsSection() {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <div className="mt-12 flex items-center gap-3">
-              <CarouselPrevious className="static translate-y-0 size-10 border-border bg-transparent text-foreground hover:bg-secondary hover:text-foreground rounded-full" />
-              <CarouselNext className="static translate-y-0 size-10 border-border bg-transparent text-foreground hover:bg-secondary hover:text-foreground rounded-full" />
-            </div>
           </Carousel>
         </RevealSection>
       </div>

@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import { RevealSection } from "@/components/reveal-section"
 import {
   Accordion,
@@ -60,6 +61,14 @@ export function FaqSection() {
                 Viss, kas jums jāzina par sadarbību ar mums.
                 Ja ir citi jautājumi, vienkārši sazinieties.
               </p>
+              <div className="mt-10 relative aspect-[4/3] w-full overflow-hidden rounded-2xl">
+                <Image
+                  src="/images/faq-image.jpg"
+                  alt="Darba vide"
+                  fill
+                  className="object-cover"
+                />
+              </div>
             </RevealSection>
           </div>
 
