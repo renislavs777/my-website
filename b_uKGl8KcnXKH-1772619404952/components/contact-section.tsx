@@ -5,14 +5,43 @@ import { RevealSection } from "@/components/reveal-section"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { ArrowUpRight, Mail, MapPin, Phone } from "lucide-react"
+import { ArrowUpRight, Mail, MapPin, Phone, Loader2 } from "lucide-react"
 
 export function ContactSection() {
   const [submitted, setSubmitted] = useState(false)
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState("")
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    setSubmitted(true)
+    setLoading(true)
+    setError("")
+
+    const formData = new FormData(e.currentTarget)
+    const data = {
+      name: formData.get("name") as string,
+      email: formData.get("email") as string,
+      message: formData.get("message") as string,
+    }
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      })
+
+      if (res.ok) {
+        setSubmitted(true)
+      } else {
+        const result = await res.json()
+        setError(result.error || "Kaut kas nogāja greizi.")
+      }
+    } catch {
+      setError("Neizdevās nosūtīt. Lūdzu, mēģiniet vēlāk.")
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (
@@ -97,6 +126,7 @@ export function ContactSection() {
                       </label>
                       <Input
                         id="name"
+                        name="name"
                         placeholder="Jūsu vārds"
                         required
                         className="h-12 rounded-xl border-border bg-secondary/40 text-foreground placeholder:text-muted-foreground/50 focus:border-accent"
@@ -111,6 +141,7 @@ export function ContactSection() {
                       </label>
                       <Input
                         id="email"
+                        name="email"
                         type="email"
                         placeholder="jusu@epasts.lv"
                         required
@@ -127,17 +158,31 @@ export function ContactSection() {
                     </label>
                     <Textarea
                       id="message"
+                      name="message"
                       placeholder="Pastāstiet par savu projektu..."
                       required
                       className="min-h-40 rounded-xl border-border bg-secondary/40 text-foreground placeholder:text-muted-foreground/50 resize-none focus:border-accent"
                     />
                   </div>
+                  {error && (
+                    <p className="text-sm text-destructive">{error}</p>
+                  )}
                   <Button
                     type="submit"
-                    className="w-full sm:w-auto self-start h-12 px-10 rounded-full bg-accent text-accent-foreground font-medium uppercase tracking-[0.12em] text-sm hover:brightness-110 transition-all duration-300"
+                    disabled={loading}
+                    className="w-full sm:w-auto self-start h-12 px-10 rounded-full bg-accent text-accent-foreground font-medium uppercase tracking-[0.12em] text-sm hover:brightness-110 transition-all duration-300 disabled:opacity-60"
                   >
-                    Nosūtīt ziņojumu
-                    <ArrowUpRight className="ml-2 size-4" />
+                    {loading ? (
+                      <>
+                        <Loader2 className="mr-2 size-4 animate-spin" />
+                        Nosūta...
+                      </>
+                    ) : (
+                      <>
+                        Nosūtīt ziņojumu
+                        <ArrowUpRight className="ml-2 size-4" />
+                      </>
+                    )}
                   </Button>
                 </form>
               )}

@@ -10,18 +10,24 @@ const testimonials = [
       "Apex pilnībā pārtransformēja mūsu tiešsaistes klātbūtni. Mūsu jaunā mājaslapa palielināja konversijas par 40% tikai trijos mēnešos. Uzmanība detaļām ir nepārspējama.",
     name: "Laura Bērziņa",
     role: "Izpilddirektore, StyleVault",
+    logo: "SV",
+    logoColor: "bg-accent",
   },
   {
     quote:
       "Profesionāli, atsaucīgi un neticami talantīgi. Viņi nodeva mūsu interneta veikalu pirms termiņa un kvalitāte pārsniedza visas gaidas. Nesadarbotos ne ar vienu citu.",
     name: "Mārtiņš Ozoliņš",
     role: "Dibinātājs, Urban Properties",
+    logo: "UP",
+    logoColor: "bg-foreground",
   },
   {
     quote:
       "Labākais ieguldījums, ko esam veikuši mūsu biznesam. Mūsu mājaslapa ir ātra, skaista un klienti pastāvīgi slavē pieredzi. Īsteni meistari.",
     name: "Anna Kalniņa",
     role: "Direktore, Bistro Nouveau",
+    logo: "BN",
+    logoColor: "bg-accent",
   },
 ]
 
@@ -69,20 +75,30 @@ export function TestimonialsSection() {
 
         <RevealSection delay={100}>
           <div className="relative min-h-[280px]">
-            <div key={current} className="animate-reveal-up">
-              <blockquote className="font-[family-name:var(--font-heading)] text-2xl md:text-3xl lg:text-4xl font-bold leading-[1.2] tracking-tight text-foreground max-w-4xl">
-                {`"${t.quote}"`}
-              </blockquote>
-              <div className="mt-10 flex items-center gap-4">
-                <div className="flex size-11 items-center justify-center bg-accent text-accent-foreground font-[family-name:var(--font-heading)] text-sm font-bold rounded-full">
-                  {t.name
-                    .split(" ")
-                    .map((n) => n[0])
-                    .join("")}
+            <div key={current} className="animate-reveal-up flex flex-col lg:flex-row lg:items-start lg:justify-between gap-10 lg:gap-16">
+              {/* Left side: quote and author */}
+              <div className="flex-1">
+                <blockquote className="font-[family-name:var(--font-heading)] text-2xl md:text-3xl lg:text-4xl font-bold leading-[1.2] tracking-tight text-foreground max-w-4xl">
+                  {`"${t.quote}"`}
+                </blockquote>
+                <div className="mt-10 flex items-center gap-4">
+                  <div className="flex size-11 items-center justify-center bg-accent text-accent-foreground font-[family-name:var(--font-heading)] text-sm font-bold rounded-full">
+                    {t.name
+                      .split(" ")
+                      .map((n) => n[0])
+                      .join("")}
+                  </div>
+                  <div>
+                    <p className="text-sm font-semibold text-foreground">{t.name}</p>
+                    <p className="text-[13px] text-muted-foreground">{t.role}</p>
+                  </div>
                 </div>
-                <div>
-                  <p className="text-sm font-semibold text-foreground">{t.name}</p>
-                  <p className="text-[13px] text-muted-foreground">{t.role}</p>
+              </div>
+
+              {/* Right side: client logo */}
+              <div className="shrink-0 flex items-start justify-center lg:justify-end lg:pt-4">
+                <div className={`flex size-24 lg:size-28 items-center justify-center rounded-2xl ${t.logoColor} text-accent-foreground font-[family-name:var(--font-heading)] text-2xl lg:text-3xl font-bold tracking-tight shadow-lg`}>
+                  {t.logo}
                 </div>
               </div>
             </div>
