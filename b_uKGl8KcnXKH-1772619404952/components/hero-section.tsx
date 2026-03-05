@@ -11,13 +11,7 @@ export function HeroSection() {
       {/* Shader gradient background */}
       <ShaderGradient />
 
-      {/* Fade overlay at bottom for smooth transition to light bg */}
-      <div
-        className="pointer-events-none absolute bottom-0 left-0 right-0 h-48 z-[1]"
-        style={{
-          background: "linear-gradient(to top, oklch(0.98 0 0), transparent)",
-        }}
-      />
+
 
       <div className="relative z-10 mx-auto w-full max-w-6xl px-8 pb-20 pt-32 lg:px-12">
         <RevealSection>
@@ -28,20 +22,18 @@ export function HeroSection() {
 
         <RevealSection delay={100}>
           <h1 className="font-[family-name:var(--font-heading)] text-[clamp(2.5rem,7.5vw,7rem)] font-extrabold leading-[0.9] tracking-tight text-white uppercase">
-            {"Veidojam"}
+            {"Jūsu"}
             <br />
-            <span className="text-accent">digitālās</span>
+            <span className="text-accent">biznesa</span>
             <br />
-            pieredzes
+            izaugsmei
           </h1>
         </RevealSection>
 
         <RevealSection delay={250}>
           <div className="mt-14 flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
             <p className="max-w-md text-base leading-relaxed text-white/50">
-              Mājaslapas un interneta veikali ambicioziem zīmoliem.
-              Veidoti ar precizitāti, dizainēti konversijai,
-              optimizēti veiktspējai.
+              Veidojam modernas mājaslapas un interneta veikalus, kas palīdz piesaistīt klientus, stiprināt zīmolu un attīstīt jūsu biznesu digitālajā vidē.
             </p>
 
             <div className="flex items-center gap-6">

@@ -13,56 +13,64 @@ import {
 
 const projects = [
   {
-    image: "/images/project-1.jpg",
-    name: "StyleVault",
-    category: "E-veikals",
+    image: "http://test.nordfest.dk/wp-content/uploads/2026/03/Autoimage.jpg",
+    name: "Autoleth",
+    category: "Auto platforma",
     description:
-      "Luksa modes interneta veikals ar paplašinātu filtrēšanu un nevainojamu norēķināšanos. 40% konversijas pieaugums.",
-    url: "https://example.com",
+      "BMW un MINI sertificēts dīleris un servisa centrs, kas nodrošina klientus ar jauniem un mazlietotiem auto.",
+    url: "https://autoleth.dk",
   },
   {
-    image: "/images/project-2.jpg",
-    name: "Bistro Nouveau",
-    category: "Restorāns",
+    image: "http://test.nordfest.dk/wp-content/uploads/2026/03/Emildas-G.jpg",
+    name: "Emildasventures",
+    category: "Auto noma",
     description:
-      "Restorāna mājaslapa ar tiešsaistes rezervācijām, dinamisku ēdienkarti un editoriālu foto.",
-    url: "https://example.com",
+      "Ekskluzīvu auto noma Kiprā. Speciāli taisīta booking sistēma, auto pārdošanas sistēma, kā arī kalendārs.",
+    url: "https://emildasventures.com/",
   },
   {
-    image: "/images/project-3.jpg",
-    name: "Urban Properties",
-    category: "Nekustamie īpašumi",
+    image: "http://test.nordfest.dk/wp-content/uploads/2026/03/Dobot-robots.jpg",
+    name: "Danatecrobots",
+    category: "Interneta veikals",
     description:
-      "Īpašumu platforma ar interaktīviem sludinājumiem, virtuālām tūrēm un hipotēkas rīkiem.",
-    url: "https://example.com",
+      "Danatec ir oficiālais Dobot robotikas risinājumu izplatītājs Latvijā, Lietuvā un Igaunijā.",
+    url: "https://danatecrobots.com/",
   },
   {
-    image: "/images/project-4.jpg",
-    name: "Atelier Skin",
-    category: "E-veikals",
+    image: "http://test.nordfest.dk/wp-content/uploads/2026/03/2Tails-180-2-fotoMadaraGritane.jpg",
+    name: "Infinitygulve",
+    category: "Mājas lapa",
     description:
-      "Premium ādas kopšanas zīmols ar lookbook integrāciju, abonementu modeli un globāliem sūtījumiem.",
-    url: "https://example.com",
+      "Unikālu formu un dabiska skaistuma parkets, skandināviska vienkāršība un neatkārtojamība.",
+    url: "https://infinitygulve.dk/",
   },
   {
-    image: "/images/project-5.jpg",
-    name: "DataFlow",
-    category: "SaaS",
+    image: "http://test.nordfest.dk/wp-content/uploads/2026/03/pexels-rodnae-productions-8612041.jpg",
+    name: "Tomoe",
+    category: "Mājas lapa",
     description:
-      "Analītikas panelis ar reāllaika datu vizualizāciju un komandas sadarbības rīkiem.",
-    url: "https://example.com",
+      "Džudo kluba mājas lapa, kas atrodās Dānijā. Lapā iespējams redzēt info un kalendāru par nodarbībām.",
+    url: "https://tomoe.dk/",
+  },
+  {
+    image: "http://test.nordfest.dk/wp-content/uploads/2026/03/Biezak-uzdotie-jautaumi.png",
+    name: "Kronīši",
+    category: "Mājas lapa",
+    description:
+      "Mājas lapa priekš koka karkasa siltumnīcām un angāriem. Izveidots unikāls kalkulators.",
+    url: "https://kronisukokapstrade.lv/",
   },
 ]
 
 export function ProjectsSection() {
   return (
-    <section id="projekti" className="relative z-10 py-28 lg:py-36">
+    <section id="projekti" className="relative z-10 py-28 lg:py-36 pb-12 lg:pb-16">
       <div className="mx-auto max-w-6xl px-8 lg:px-12">
         <RevealSection>
           <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-20">
             <div>
               <p className="text-[13px] font-medium uppercase tracking-[0.2em] text-muted-foreground mb-4">
-                Izvēlēti darbi
+                Mūsu paveiktie darbi
               </p>
               <h2 className="font-[family-name:var(--font-heading)] text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl uppercase">
                 Projekti

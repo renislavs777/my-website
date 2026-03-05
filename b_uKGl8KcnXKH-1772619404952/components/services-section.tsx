@@ -7,25 +7,25 @@ const services = [
     num: "01",
     title: "Mājaslapas",
     description:
-      "Individuāli veidotas mājaslapas, kas ielādējas zibenīgi un ierindojas augstāk meklētājos. No korporatīvām līdz portfolio — katrs pikselis ir pārdomāts.",
+      "Veidojam modernas un ātras mājaslapas, izmantojot pasaulē populārāko un uzticamāko satura vadības sistēmu – WordPress. Mūsu mērķis ir radīt lapas, kas ir viegli lietojamas, drošas un pielāgotas katra klienta vajadzībām. Strādājam tā, lai mūsu klientiem nākotnē būtu pēc iespējas mazāk papildu izmaksu un lai mājaslapu būtu viegli uzturēt.",
   },
   {
     num: "02",
     title: "Interneta veikali",
     description:
-      "E-komercija, kas konvertē. Nevainojami pirkuma procesi, inventāra sistēmas un maksājumu integrācijas, kas vienkārši strādā.",
+      "Izstrādājam ērtus, ātrus un drošus interneta veikalus, izmantojot pasaulē populārāko platformu – WordPress ar WooCommerce. Veikalus veidojam tā, lai tos būtu viegli pārvaldīt un attīstīt arī nākotnē. Mūsu mērķis ir radīt risinājumu, kas palīdz pārdot vairāk un vienlaikus samazina klientiem nevajadzīgas papildu izmaksas.",
   },
   {
     num: "03",
     title: "Dizains",
     description:
-      "Uz lietotāju orientēts dizains, kas izskatās lieliski un konvertē. Uz izpēti balstītas saskarnes, kas priecē jūsu klientus.",
+      "Mēs neveidojam mājaslapas no gataviem šabloniem. Katras lapas dizainu izstrādājam individuāli, balstoties uz klienta vēlmēm un zīmola identitāti. Mūsu mērķis ir radīt modernu, pārskatāmu un profesionālu dizainu, kas izceļ uzņēmumu un palīdz tam izskatīties uzticamam internetā.",
   },
 ]
 
 export function ServicesSection() {
   return (
-    <section id="pakalpojumi" className="relative z-10 py-28 lg:py-36">
+    <section id="pakalpojumi" className="relative z-10 pt-12 lg:pt-16 pb-28 lg:pb-36">
       <div className="mx-auto max-w-6xl px-8 lg:px-12">
         <RevealSection>
           <div className="mb-20">
@@ -33,7 +33,7 @@ export function ServicesSection() {
               Pakalpojumi
             </p>
             <h2 className="font-[family-name:var(--font-heading)] text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl uppercase">
-              Ko mēs darām
+              Ko mēs jums piedāvājam?
             </h2>
             <div className="mt-4 w-full border-b border-accent/30" />
           </div>
@@ -43,7 +43,7 @@ export function ServicesSection() {
           {services.map((service, i) => (
             <RevealSection key={service.num} delay={i * 80}>
               <div className="group flex flex-col md:flex-row md:items-center gap-6 md:gap-12 py-10 border-t border-border -mx-8 px-8 lg:-mx-12 lg:px-12 rounded-2xl transition-colors duration-300 hover:bg-secondary/50">
-                <span className="text-xs font-medium tracking-wider text-accent font-[family-name:var(--font-heading)] w-10 shrink-0">
+                <span className="text-5xl md:text-7xl font-bold tracking-tight text-accent/15 font-[family-name:var(--font-heading)] w-20 md:w-28 shrink-0 leading-none">
                   {service.num}
                 </span>
                 <h3 className="font-[family-name:var(--font-heading)] text-2xl md:text-4xl font-bold text-foreground uppercase tracking-tight w-full md:w-72 shrink-0 transition-colors duration-300 group-hover:text-accent">
