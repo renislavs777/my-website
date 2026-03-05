@@ -67,7 +67,7 @@ export function ContactSection() {
                     <br />
                     ar mums
                   </h3>
-                  <p className="mt-5 text-sm leading-relaxed text-background/50">
+                  <p className="mt-5 text-sm leading-relaxed text-background/80">
                     Gatavi pacelt savu biznesu jaunā līmenī? Nosūtiet mums ziņojumu un mēs atbildēsim 24 stundu laikā.
                   </p>
                 </div>

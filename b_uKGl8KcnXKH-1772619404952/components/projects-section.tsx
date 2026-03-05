@@ -93,8 +93,8 @@ export function ProjectsSection() {
             }}
             className="w-full"
           >
-            {/* Arrows at the top right */}
-            <div className="flex items-center justify-end gap-3 mb-8">
+            {/* Arrows under the headline on the left */}
+            <div className="flex items-center justify-start gap-3 mb-8">
               <CarouselPrevious className="static translate-y-0 size-10 border-border bg-transparent text-foreground hover:bg-secondary hover:text-foreground rounded-full" />
               <CarouselNext className="static translate-y-0 size-10 border-border bg-transparent text-foreground hover:bg-secondary hover:text-foreground rounded-full" />
             </div>
