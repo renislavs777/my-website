@@ -48,7 +48,7 @@ export function ServicesSection() {
                 <h3 className="font-[family-name:var(--font-heading)] text-2xl md:text-4xl font-bold text-foreground uppercase tracking-tight w-full md:w-72 shrink-0 transition-colors duration-300 group-hover:text-accent">
                   {service.title}
                 </h3>
-                <p className="flex-1 text-sm leading-relaxed text-muted-foreground max-w-md">
+                <p className="flex-1 text-sm leading-relaxed text-muted-foreground">
                   {service.description}
                 </p>
               </div>
