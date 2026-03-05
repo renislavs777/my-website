@@ -44,7 +44,7 @@ const faqs = [
 
 export function FaqSection() {
   return (
-    <section id="buj" className="relative z-10 py-28 lg:py-36 border-t border-border">
+    <section id="buj" className="relative z-10 py-16 lg:py-20 border-t border-border">
       <div className="mx-auto max-w-6xl px-8 lg:px-12">
         <div className="grid gap-16 lg:grid-cols-2 lg:gap-28">
           {/* Left header */}

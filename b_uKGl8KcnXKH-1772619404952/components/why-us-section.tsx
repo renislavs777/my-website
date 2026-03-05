@@ -66,7 +66,7 @@ export function WhyUsSection() {
               <RevealSection key={feature.num} delay={i * 100}>
                 <div className="group py-10 border-t border-border">
                   <div className="flex items-start gap-6">
-                    <span className="text-[13px] font-medium tracking-wider text-accent font-[family-name:var(--font-heading)] pt-1 shrink-0">
+                    <span className="text-base font-bold tracking-wider text-accent font-[family-name:var(--font-heading)] pt-1 shrink-0">
                       {feature.num}
                     </span>
                     <div>
