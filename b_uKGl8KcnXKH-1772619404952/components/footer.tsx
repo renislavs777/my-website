@@ -72,7 +72,7 @@ export function Footer() {
 
         <div className="mt-20 flex flex-col md:flex-row md:items-center md:justify-between gap-4 pt-8 border-t border-border">
           <p className="text-[13px] text-muted-foreground">
-            {`\u00A9 ${new Date().getFullYear()} Apex Digital. Visas tiesības aizsargātas.`}
+            {`\u00A9 ${new Date().getFullYear()} Krastweb Digital. Visas tiesības aizsargātas.`}
           </p>
           <p className="text-[13px] text-muted-foreground">
             Veidots no sirds un no rajona
