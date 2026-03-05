@@ -7,7 +7,7 @@ const _inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const _syne = Syne({ subsets: ["latin"], variable: "--font-syne" });
 
 export const metadata: Metadata = {
-  title: 'Apex Digital — Digitālā Studija',
+  title: 'Krastweb — Mājas lapas un interneta veikali',
   description: 'Veidojam premium mājaslapas un interneta veikalus ambicioziem zīmoliem. Moderns dizains, ātra veiktspēja, uzticams atbalsts.',
   generator: 'v0.app',
   icons: {
