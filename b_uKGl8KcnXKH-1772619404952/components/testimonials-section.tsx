@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import Image from "next/image"
 import { RevealSection } from "@/components/reveal-section"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 
@@ -10,7 +11,7 @@ const testimonials = [
       "Apex pilnībā pārtransformēja mūsu tiešsaistes klātbūtni. Mūsu jaunā mājaslapa palielināja konversijas par 40% tikai trijos mēnešos. Uzmanība detaļām ir nepārspējama.",
     name: "Laura Bērziņa",
     role: "Izpilddirektore, StyleVault",
-    logo: "http://test.nordfest.dk/wp-content/uploads/2026/03/tomoelogo.png",
+    logo: "/images/tomoelogo.png",
     logoColor: "bg-accent",
   },
   {
@@ -18,7 +19,7 @@ const testimonials = [
       "Profesionāli, atsaucīgi un neticami talantīgi. Viņi nodeva mūsu interneta veikalu pirms termiņa un kvalitāte pārsniedza visas gaidas. Nesadarbotos ne ar vienu citu.",
     name: "Mārtiņš Ozoliņš",
     role: "Dibinātājs, Urban Properties",
-    logo: "UP",
+    logo: "/images/tomoelogo.png",
     logoColor: "bg-foreground",
   },
   {
@@ -26,7 +27,7 @@ const testimonials = [
       "Labākais ieguldījums, ko esam veikuši mūsu biznesam. Mūsu mājaslapa ir ātra, skaista un klienti pastāvīgi slavē pieredzi. Īsteni meistari.",
     name: "Anna Kalniņa",
     role: "Direktore, Bistro Nouveau",
-    logo: "BN",
+    logo: "/images/tomoelogo.png",
     logoColor: "bg-accent",
   },
 ]
@@ -97,8 +98,14 @@ export function TestimonialsSection() {
 
               {/* Right side: client logo */}
               <div className="shrink-0 flex items-start justify-center lg:justify-end lg:pt-4">
-                <div className={`flex size-24 lg:size-28 items-center justify-center rounded-2xl ${t.logoColor} text-accent-foreground font-[family-name:var(--font-heading)] text-2xl lg:text-3xl font-bold tracking-tight shadow-lg`}>
-                  {t.logo}
+                <div className={`flex size-24 lg:size-28 items-center justify-center rounded-2xl ${t.logoColor} shadow-lg overflow-hidden`}>
+                  <Image
+                    src={t.logo}
+                    alt={`${t.name} logo`}
+                    width={112}
+                    height={112}
+                    className="object-contain w-full h-full p-3"
+                  />
                 </div>
               </div>
             </div>
