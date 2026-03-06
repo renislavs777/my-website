@@ -2,7 +2,7 @@ import { NextResponse } from "next/server"
 
 export async function POST(request: Request) {
   try {
-    const { name, email, message } = await request.json()
+    const { name, email, subject, message } = await request.json()
 
     if (!name || !email || !message) {
       return NextResponse.json(
@@ -19,6 +19,10 @@ export async function POST(request: Request) {
       )
     }
 
+    const emailSubject = subject
+      ? `${subject} — no ${name}`
+      : `Jauns ziņojums no ${name}`
+
     const response = await fetch("https://api.resend.com/emails", {
       method: "POST",
       headers: {
@@ -26,9 +30,9 @@ export async function POST(request: Request) {
         Authorization: `Bearer ${process.env.RESEND_API_KEY}`,
       },
       body: JSON.stringify({
-        from: "Apex Digital <onboarding@resend.dev>",
-        to: "krastins.renars@gmail.com",
-        subject: `Jauns ziņojums no ${name}`,
+        from: "KrastWeb <onboarding@resend.dev>",
+        to: "info@krastweb.com",
+        subject: emailSubject,
         reply_to: email,
         html: `
           <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto;">
@@ -36,10 +40,11 @@ export async function POST(request: Request) {
             <hr style="border: none; border-top: 1px solid #eee; margin: 20px 0;" />
             <p><strong>Vārds:</strong> ${name}</p>
             <p><strong>E-pasts:</strong> ${email}</p>
+            ${subject ? `<p><strong>Tēma:</strong> ${subject}</p>` : ""}
             <p><strong>Ziņojums:</strong></p>
             <p style="background: #f9f9f9; padding: 16px; border-radius: 8px; line-height: 1.6;">${message.replace(/\n/g, "<br>")}</p>
             <hr style="border: none; border-top: 1px solid #eee; margin: 20px 0;" />
-            <p style="color: #999; font-size: 12px;">Nosūtīts no Apex Digital mājaslapas kontaktformas.</p>
+            <p style="color: #999; font-size: 12px;">Nosūtīts no KrastWeb mājaslapas kontaktformas.</p>
           </div>
         `,
       }),
