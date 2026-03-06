@@ -11,7 +11,7 @@ const testimonials = [
       "Apex pilnībā pārtransformēja mūsu tiešsaistes klātbūtni. Mūsu jaunā mājaslapa palielināja konversijas par 40% tikai trijos mēnešos. Uzmanība detaļām ir nepārspējama.",
     name: "Laura Bērziņa",
     role: "Izpilddirektore, StyleVault",
-    logo: "http://test.nordfest.dk/wp-content/uploads/2026/03/305768628_762492705154878_5839740767657341872_n.jpg",
+    logo: "http://test.nordfest.dk/wp-content/uploads/2026/03/tomoe-logo.png",
   },
   {
     quote:
