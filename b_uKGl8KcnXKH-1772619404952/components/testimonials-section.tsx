@@ -12,7 +12,7 @@ const testimonials = [
     name: "Laura Bērziņa",
     role: "Izpilddirektore, StyleVault",
     logo: "/images/tomoelogo.png",
-    logoColor: "bg-accent",
+    logoColor: "bg-foreground",
   },
   {
     quote:
