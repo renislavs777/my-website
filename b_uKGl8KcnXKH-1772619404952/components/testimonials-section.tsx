@@ -12,7 +12,6 @@ const testimonials = [
     name: "Laura Bērziņa",
     role: "Izpilddirektore, StyleVault",
     logo: "/images/tomoelogo.png",
-    logoColor: "bg-foreground",
   },
   {
     quote:
@@ -20,7 +19,6 @@ const testimonials = [
     name: "Mārtiņš Ozoliņš",
     role: "Dibinātājs, Urban Properties",
     logo: "/images/tomoelogo.png",
-    logoColor: "bg-foreground",
   },
   {
     quote:
@@ -28,7 +26,6 @@ const testimonials = [
     name: "Anna Kalniņa",
     role: "Direktore, Bistro Nouveau",
     logo: "/images/tomoelogo.png",
-    logoColor: "bg-accent",
   },
 ]
 
@@ -98,13 +95,13 @@ export function TestimonialsSection() {
 
               {/* Right side: client logo */}
               <div className="shrink-0 flex items-start justify-center lg:justify-end lg:pt-4">
-                <div className={`flex size-24 lg:size-28 items-center justify-center rounded-2xl ${t.logoColor} shadow-lg overflow-hidden`}>
+                <div className="flex size-24 lg:size-28 items-center justify-center">
                   <Image
                     src={t.logo}
                     alt={`${t.name} logo`}
                     width={112}
                     height={112}
-                    className="object-contain w-full h-full p-3"
+                    className="object-contain w-full h-full"
                   />
                 </div>
               </div>
