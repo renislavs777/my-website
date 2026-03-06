@@ -49,7 +49,7 @@ export function TestimonialsSection() {
                 Atsauksmes
               </p>
               <h2 className="font-[family-name:var(--font-heading)] text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl uppercase">
-                Klientu vārdi
+                Klientu atsauksmes
               </h2>
             </div>
             <div className="hidden md:flex items-center gap-3">
