@@ -16,9 +16,9 @@ const testimonials = [
   {
     quote:
       "Profesionāli, atsaucīgi un neticami talantīgi. Viņi nodeva mūsu interneta veikalu pirms termiņa un kvalitāte pārsniedza visas gaidas. Nesadarbotos ne ar vienu citu.",
-    name: "Mārtiņš Ozoliņš",
-    role: "Dibinātājs, Urban Properties",
-    logo: "/images/tomoelogo.png",
+    name: "Jānis Kordovics",
+    role: "JK food treileris",
+    logo: "http://test.nordfest.dk/wp-content/uploads/2026/03/JK-Food-Trailer.svg",
   },
   {
     quote:
