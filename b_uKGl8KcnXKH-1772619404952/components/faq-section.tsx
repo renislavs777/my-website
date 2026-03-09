@@ -23,7 +23,7 @@ const faqs = [
   {
     question: "Vai piedāvājat pastāvīgu atbalstu?",
     answer:
-      "Noteikti. Piedāvājam elastīgas uzturēšanas un atbalsta paketes, sākot no 100 EUR/mēn. Tas ietver drošības atjauninājumus, veiktspējas uzraudzību, satura atjauninājumus un prioritāru kļūdu labošanu.",
+      "Noteikti. Piedāvājam elastīgas uzturēšanas un atbalsta paketes. Tas ietver drošības atjauninājumus, veiktspējas uzraudzību, satura atjauninājumus un prioritāru kļūdu labošanu.",
   },
   {
     question: "Kādas tehnoloģijas izmantojat?",
