@@ -17,15 +17,15 @@ const testimonials = [
     quote:
       "Renārs man zvanīja un teica, ka mums esot vajadzīgs interneta veikals mūsu uzkodām. Sākumā likās, ka tas nav vajadzīgs, jo viss jau gāja labi. Bet tad nodomāju – kāpēc gan nē? Tagad, kad mums ir interneta veikals, varu teikt, ka tā bija viena no labākajām investīcijām.",
     name: "Jānis Kordovics",
-    role: "JK food treileris",
+    role: "JK food treileris un JK Uzkodas",
     logo: "http://test.nordfest.dk/wp-content/uploads/2026/03/JK-Food-Trailer.svg",
   },
   {
     quote:
-      "Labākais ieguldījums, ko esam veikuši mūsu biznesam. Mūsu mājaslapa ir ātra, skaista un klienti pastāvīgi slavē pieredzi. Īsteni meistari.",
-    name: "Anna Kalniņa",
-    role: "Direktore, Bistro Nouveau",
-    logo: "/images/tomoelogo.png",
+      "Viennozīmīgi iesakām Renāru — viņš zina, ko dara, un vienmēr palīdz, ja rodas kādi jautājumi. Sadarbība bija vienkārša un patīkama, un visu procesu laikā jutāmies droši, ka projekts ir labās rokās.",
+    name: "Toms",
+    role: "Baltikspa.dk",
+    logo: "http://test.nordfest.dk/wp-content/uploads/2026/03/Baltik-logo.png",
   },
 ]
 
