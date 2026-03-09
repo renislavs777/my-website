@@ -40,6 +40,7 @@ export function Navbar() {
           ? "bg-background/95 backdrop-blur-md border-b border-border/50"
           : "bg-transparent"
       }`}
+      style={{ paddingTop: 'env(safe-area-inset-top)' }}
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 sm:px-8 sm:py-5 lg:px-12">
         <Link
@@ -95,24 +96,30 @@ export function Navbar() {
 
       {/* Full-screen mobile menu */}
       <div
-        className={`fixed inset-0 z-40 bg-background flex flex-col md:hidden transition-opacity duration-300 ${
-          open ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+        className={`fixed inset-0 z-40 bg-background flex flex-col md:hidden transition-all duration-300 ${
+          open ? "opacity-100 pointer-events-auto visible" : "opacity-0 pointer-events-none invisible"
         }`}
+        style={{ minHeight: '100dvh' }}
       >
-        {/* Top bar with logo */}
-        <div className="flex items-center px-6 py-4 sm:px-8 sm:py-5">
+        {/* Top bar with logo - matching header height, with safe area for notch */}
+        <div 
+          className="flex items-center justify-between px-6 py-4 sm:px-8 sm:py-5" 
+          style={{ paddingTop: 'max(1rem, env(safe-area-inset-top))' }}
+        >
           <Link
             href="/"
             onClick={() => setOpen(false)}
             className="font-[family-name:var(--font-heading)] text-lg font-bold tracking-tight uppercase text-foreground"
           >
-            Apex
+            Krastweb
             <span className="text-accent">.</span>
           </Link>
+          {/* Placeholder for alignment - matches burger button space */}
+          <div className="w-9 h-9" />
         </div>
 
         {/* Centered nav links */}
-        <div className="flex flex-1 flex-col items-center justify-center gap-8">
+        <div className="flex flex-1 flex-col items-center justify-center gap-8 bg-background">
           {navLinks.map((link) => (
             <Link
               key={link.href}
