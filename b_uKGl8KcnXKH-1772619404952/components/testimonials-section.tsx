@@ -15,7 +15,7 @@ const testimonials = [
   },
   {
     quote:
-      "Profesionāli, atsaucīgi un neticami talantīgi. Viņi nodeva mūsu interneta veikalu pirms termiņa un kvalitāte pārsniedza visas gaidas. Nesadarbotos ne ar vienu citu.",
+      "Renārs man zvanīja un teica, ka mums esot vajadzīgs interneta veikals mūsu uzkodām. Sākumā likās, ka tas nav vajadzīgs, jo viss jau gāja labi. Bet tad nodomāju – kāpēc gan nē? Tagad, kad mums ir interneta veikals, varu teikt, ka tā bija viena no labākajām investīcijām.",
     name: "Jānis Kordovics",
     role: "JK food treileris",
     logo: "http://test.nordfest.dk/wp-content/uploads/2026/03/JK-Food-Trailer.svg",
