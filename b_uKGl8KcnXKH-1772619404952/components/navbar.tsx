@@ -102,7 +102,10 @@ export function Navbar() {
         style={{ minHeight: '100dvh' }}
       >
         {/* Top bar with logo - matching header height, with safe area for notch */}
-        <div className="flex items-center justify-between px-6 py-4 sm:px-8 sm:py-5" style={{ paddingTop: 'max(1rem, env(safe-area-inset-top))' }}>
+        <div 
+          className="flex items-center justify-between px-6 py-4 sm:px-8 sm:py-5" 
+          style={{ paddingTop: 'max(1rem, env(safe-area-inset-top))' }}
+        >
           <Link
             href="/"
             onClick={() => setOpen(false)}
