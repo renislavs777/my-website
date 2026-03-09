@@ -8,9 +8,9 @@ import { ChevronLeft, ChevronRight } from "lucide-react"
 const testimonials = [
   {
     quote:
-      "Apex pilnībā pārtransformēja mūsu tiešsaistes klātbūtni. Mūsu jaunā mājaslapa palielināja konversijas par 40% tikai trijos mēnešos. Uzmanība detaļām ir nepārspējama.",
-    name: "Laura Bērziņa",
-    role: "Izpilddirektore, StyleVault",
+      "Esam ļoti apmierināti ar mūsu džudo kluba mājaslapas pārbūvi. Viss process bija vienkāršs, komunikācija laba un rezultāts tiešām izdevās ļoti labs. Mājaslapa tagad izskatās daudz modernāk un ir daudz ērtāk lietojama. Paldies par lielisko darbu!",
+    name: "Artūrs Mālnieks",
+    role: "Džudo treneris",
     logo: "http://test.nordfest.dk/wp-content/uploads/2026/03/tomoe-logo.png",
   },
   {
