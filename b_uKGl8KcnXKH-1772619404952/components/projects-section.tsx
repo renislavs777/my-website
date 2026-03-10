@@ -71,6 +71,14 @@ const projects = [
       "Speciāli veidots booking kalendārs un ēdienkartes menu, ka arī moderna un viegla mājas lapa",
     url: "https://jktreileris.lv/",
   },
+    {
+    image: "http://test.nordfest.dk/wp-content/uploads/2026/03/Badevaerelse-Godrums-VVS.jpg",
+    name: "Godrums VVS",
+    category: "Interneta veikals",
+    description:
+      "Interneta veikals pirekš firmas Dānija kas tirgo visa veida santehnikas produktus, ka arī izstalācijas.",
+    url: "https://www.godrumsvvs.dk/",
+  },
 ]
 
 export function ProjectsSection() {
