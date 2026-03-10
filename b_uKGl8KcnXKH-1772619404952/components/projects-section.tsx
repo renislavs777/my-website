@@ -79,6 +79,30 @@ const projects = [
       "Interneta veikals pirekš firmas Dānija kas tirgo visa veida santehnikas produktus, ka arī izstalācijas.",
     url: "https://www.godrumsvvs.dk/",
   },
+  {
+    image: "http://test.nordfest.dk/wp-content/uploads/2026/03/pexels-ivan-3089685.jpg",
+    name: "Urbumiņš Pluss",
+    category: "Mājas lapa",
+    description:
+      "Šī mājaslapa tika pilnībā pārveidota – tās iepriekšējais dizains bija saglabājies vēl no 1998. gada. Tagad tai ir moderns un viegli saprotams dizains.",
+    url: "https://urbuminspluss.lv/",
+  },
+    {
+    image: "http://test.nordfest.dk/wp-content/uploads/2026/03/Lej-af-sauna-Baltikspa.dk_.png",
+    name: "Baltik SPA",
+    category: "Interneta veikals",
+    description:
+      "Vecā mājaslapa bija haotiska un grūti pārskatāma, tāpēc mūsu uzdevums bija to sakārtot un padarīt lietotājiem saprotamāku – un mums tas arī izdevās.",
+    url: "https://baltikspa.dk/",
+  },
+      {
+    image: "http://test.nordfest.dk/wp-content/uploads/2026/03/47B6CF1D-3173-49C4-9D1A-E9FDE8A5F800-547524885ffd4f06542686b23946e9d3-300x400-1.jpeg",
+    name: "Delikatese",
+    category: "Interneta veikals",
+    description:
+      "Interneta veikals ar daudzām funkcijām, piemēram, speciālu grāmatvedības sistēmu, klientu reģistrēšanās sistēmu un citām iespējām.",
+    url: "https://delikatese.lv/",
+  },
 ]
 
 export function ProjectsSection() {
