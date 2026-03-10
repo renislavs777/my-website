@@ -34,7 +34,7 @@ export function ContactSection() {
                 </div>
 
                 <div className="mt-12 flex flex-col gap-6">
-                  <a href="mailto:info@krastweb.com" className="group flex items-center gap-4 transition-colors duration-300">
+                  <a href="mailto:krastins.renars@gmail.com" className="group flex items-center gap-4 transition-colors duration-300">
                     <div className="flex size-10 items-center justify-center rounded-full bg-background/10">
                       <Mail className="size-4 text-background/70 transition-colors duration-300 group-hover:text-accent" />
                     </div>
