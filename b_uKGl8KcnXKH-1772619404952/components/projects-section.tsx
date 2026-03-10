@@ -63,6 +63,14 @@ const projects = [
       "Mājas lapa priekš koka karkasa siltumnīcām un angāriem. Izveidots unikāls kalkulators.",
     url: "https://kronisukokapstrade.lv/",
   },
+  {
+    image: "http://test.nordfest.dk/wp-content/uploads/2026/03/JK-treileris-Riga.jpg",
+    name: "JK Treileris",
+    category: "Mājas lapa",
+    description:
+      "Speciāli veidots booking kalendārs un ēdienkartes menu, ka arī moderna un viegla mājas lapa",
+    url: "https://jktreileris.lv/",
+  },
 ]
 
 export function ProjectsSection() {
