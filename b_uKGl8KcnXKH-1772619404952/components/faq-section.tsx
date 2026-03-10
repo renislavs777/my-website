@@ -13,22 +13,22 @@ const faqs = [
   {
     question: "Cik maksā mājaslapa?",
     answer:
-      "Mūsu projekti parasti svārstās no 2 000 EUR līdz 20 000+ EUR atkarībā no sarežģītības, funkcijām un dizaina prasībām. Sniedzam detalizētu piedāvājumu pēc jūsu specifisko vajadzību izpratnes bezmaksas konsultācijā.",
+      "Mūsu projektu izmaksas var ievērojami svārstīties atkarībā no projekta sarežģītības, nepieciešamajām funkcijām, dizaina un jūsu biznesa vajadzībām. Parasti projekti sākas no 500 EUR, taču precīzu piedāvājumu varam sagatavot tikai pēc tam, kad esam izpratuši jūsu mērķus un prasības. Piedāvājam bezmaksas konsultāciju, kuras laikā apspriedīsim jūsu ideju un sagatavosim atbilstošu piedāvājumu.",
   },
   {
     question: "Cik ilgi aizņem izstrāde?",
     answer:
-      "Standarta mājaslapa aizņem 4–6 nedēļas no sākuma līdz palaišanai. Sarežģītāki projekti, piemēram, interneta veikali, var aizņemt 8–12 nedēļas. Vienmēr sniedzam skaidru laika grafiku pirms darba uzsākšanas.",
+      "Standarta mājaslapa aizņem 1–4 nedēļas no sākuma līdz palaišanai. Sarežģītāki projekti, piemēram, interneta veikali, var aizņemt vairāk laika. Vienmēr sniedzam skaidru laika grafiku pirms darba uzsākšanas.",
   },
   {
     question: "Vai piedāvājat pastāvīgu atbalstu?",
     answer:
-      "Noteikti. Piedāvājam elastīgas uzturēšanas un atbalsta paketes. Tas ietver drošības atjauninājumus, veiktspējas uzraudzību, satura atjauninājumus un prioritāru kļūdu labošanu.",
+      "Noteikti. Piedāvājam elastīgas uzturēšanas un atbalsta paketes. Tas ietver drošības atjauninājumus, veiktspējas uzraudzību, satura atjauninājumus un prioritāru kļūdu labošanu. 24/7.",
   },
   {
     question: "Kādas tehnoloģijas izmantojat?",
     answer:
-      "Strādājam ar modernām, pārbaudītām tehnoloģijām, tostarp Next.js, React, TypeScript un Tailwind CSS. E-komercijai integrējam Shopify, Stripe un pielāgotus risinājumus atbilstoši jūsu vajadzībām.",
+      "Strādājam ar uzticamiem un pārbaudītiem risinājumiem, piemēram, WordPress un WooCommerce, kas ļauj izveidot profesionālas un viegli pārvaldāmas mājaslapas un e-veikalus. Mēs cenšamies visu nepieciešamo izveidot vienuviet, lai jums nebūtu jāmaksā papildus citām platformām vai uzņēmumiem par funkcijām, kuras varam izstrādāt paši atbilstoši jūsu vajadzībām.",
   },
   {
     question: "Vai varat pārdizainēt manu esošo lapu?",
