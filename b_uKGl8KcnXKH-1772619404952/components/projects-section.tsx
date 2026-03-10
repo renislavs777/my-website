@@ -48,7 +48,7 @@ const projects = [
     url: "https://infinitygulve.dk/",
   },
   {
-    image: "http://test.nordfest.dk/wp-content/uploads/2026/03/pexels-rodnae-productions-8612041.jpg",
+    image: "http://test.nordfest.dk/wp-content/uploads/2026/03/Tomoeklub.jpg",
     name: "Tomoe",
     category: "Mājas lapa",
     description:
