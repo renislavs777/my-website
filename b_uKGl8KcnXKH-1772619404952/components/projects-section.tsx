@@ -40,7 +40,7 @@ const projects = [
     url: "https://danatecrobots.com/",
   },
   {
-    image: "http://test.nordfest.dk/wp-content/uploads/2026/03/2Tails-180-2-fotoMadaraGritane.jpg",
+    image: "http://test.nordfest.dk/wp-content/uploads/2026/03/infinity.jpg",
     name: "Infinitygulve",
     category: "Mājas lapa",
     description:
