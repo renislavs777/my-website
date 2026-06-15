@@ -16,11 +16,11 @@ import {
 
 const projects = [
   {
-    image: "http://test.nordfest.dk/wp-content/uploads/2026/03/Autoimage.jpg",
-    name: "Autoleth",
+    image: "http://test.nordfest.dk/wp-content/uploads/2026/06/gkw.jpg",
+    name: "GKWLINE",
     category: "Auto platforma",
     description:
-      "BMW un MINI sertificēts dīleris un servisa centrs, kas nodrošina klientus ar jauniem un mazlietotiem auto.",
+      "Logi, durvis un terases — augstākajiem standartiem.",
     url: "https://autoleth.dk",
   },
   {
