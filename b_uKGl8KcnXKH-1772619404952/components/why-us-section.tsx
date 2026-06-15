@@ -58,7 +58,7 @@ export function WhyUsSection() {
           <RevealSection>
             <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
               <Image
-                src="http://test.nordfest.dk/wp-content/uploads/2026/03/Snapinsta.app_261707367_426081789142926_2388808228243690839_n_1080.webp"
+                src="http://test.nordfest.dk/wp-content/uploads/2026/06/prohelp-website.png"
                 alt="Individuāli web risinājumi"
                 fill
                 className="object-cover"
@@ -118,7 +118,7 @@ export function WhyUsSection() {
           <RevealSection className="order-1 lg:order-2">
             <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
               <Image
-                src="http://test.nordfest.dk/wp-content/uploads/2026/03/398321879_830289102435057_9155434284416908712_n.webp"
+                src="http://test.nordfest.dk/wp-content/uploads/2026/06/renars.png"
                 alt="SEO un atbalsts"
                 fill
                 className="object-cover"
