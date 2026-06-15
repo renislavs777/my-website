@@ -18,10 +18,10 @@ const projects = [
   {
     image: "http://test.nordfest.dk/wp-content/uploads/2026/06/gkw.jpg",
     name: "GKWLINE",
-    category: "Auto platforma",
+    category: "Mājas lapa",
     description:
       "Logi, durvis un terases — augstākajiem standartiem.",
-    url: "https://autoleth.dk",
+    url: "https://www.gkwline.lv/",
   },
   {
     image: "http://test.nordfest.dk/wp-content/uploads/2026/03/Emildas-G.jpg",
