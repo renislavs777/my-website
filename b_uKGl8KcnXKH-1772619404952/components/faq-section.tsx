@@ -63,7 +63,7 @@ export function FaqSection() {
               </p>
               <div className="mt-10 relative aspect-[4/3] w-full overflow-hidden rounded-2xl">
                 <Image
-                  src="https://nordicmedia.dk/wp-content/uploads/2024/05/Nordicmedia-Kolding.jpg"
+                  src="http://test.nordfest.dk/wp-content/uploads/2026/06/auto-lapa.png"
                   alt="Darba vide"
                   fill
                   className="object-cover"
