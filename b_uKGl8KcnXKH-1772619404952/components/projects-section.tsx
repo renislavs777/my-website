@@ -16,6 +16,14 @@ import {
 
 const projects = [
   {
+    image: "http://test.nordfest.dk/wp-content/uploads/2026/06/krk-works.jpg",
+    name: "KRKWORKS",
+    category: "Interneta veikals",
+    description: "Auto servisa mājas lapa un interneta veikals.",
+    url: "https://krkworks.lv/",
+    isNew: true,
+  },
+  {
     image: "http://test.nordfest.dk/wp-content/uploads/2026/06/gkw.jpg",
     name: "GKWLINE",
     category: "Mājas lapa",
@@ -196,6 +204,11 @@ export function ProjectsSection() {
                       />
                       {/* Overlay on hover */}
                       <div className="absolute inset-0 bg-foreground/0 transition-colors duration-500 group-hover:bg-foreground/10 rounded-2xl" />
+                      {project.isNew && (
+                        <span className="absolute right-4 top-4 z-10 rounded-full bg-green-500 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-white shadow-lg">
+                          Jaunums
+                        </span>
+                      )}
                     </div>
                     <div className="mt-5">
                       <div className="flex items-center justify-between gap-3">
