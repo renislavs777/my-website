@@ -20,7 +20,7 @@ const projects = [
     name: "KRKWORKS",
     category: "Interneta veikals",
     description: "Auto servisa mājas lapa un interneta veikals.",
-    url: "#",
+    url: "https://krkworks.lv/",
     isNew: true,
   },
   {
